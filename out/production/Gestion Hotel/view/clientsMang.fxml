@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="546.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.clientsMang">
+   <children>
+      <TableView fx:id="TABLE" layoutX="694.0" layoutY="39.0" prefHeight="493.0" prefWidth="446.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="NAME" prefWidth="131.0" text="Name" />
+            <TableColumn fx:id="EMAIL" prefWidth="233.0" text="Email" />
+        </columns>
+      </TableView>
+      <TextField fx:id="nameIn" layoutX="181.0" layoutY="139.0" prefHeight="50.0" prefWidth="200.0" />
+      <TextField fx:id="emailIn" layoutX="183.0" layoutY="202.0" prefHeight="50.0" prefWidth="200.0" />
+      <Button fx:id="findBtn" layoutX="21.0" layoutY="382.0" mnemonicParsing="false" onAction="#find" prefHeight="50.0" prefWidth="145.0" text="chercher par email" />
+      <Button fx:id="updateBtn" layoutX="179.0" layoutY="382.0" mnemonicParsing="false" onAction="#update" prefHeight="50.0" prefWidth="110.0" text="update" />
+      <Button fx:id="deletBtn" layoutX="307.0" layoutY="382.0" mnemonicParsing="false" onAction="#delete" prefHeight="50.0" prefWidth="110.0" text="supprimer" />
+      <Button fx:id="rtnBtn" layoutX="34.0" layoutY="487.0" mnemonicParsing="false" onAction="#rtn" prefHeight="50.0" prefWidth="117.0" text="&lt;--" />
+      <Button fx:id="logoutBtn" layoutX="512.0" layoutY="487.0" mnemonicParsing="false" onAction="#logout" prefHeight="50.0" prefWidth="117.0" text="Log out" />
+      <Label layoutX="21.0" layoutY="139.0" prefHeight="50.0" prefWidth="82.0" text="Name" />
+      <Label layoutX="21.0" layoutY="206.0" prefHeight="43.0" prefWidth="82.0" text="Email" />
+      <Button fx:id="addBtn" layoutX="446.0" layoutY="382.0" mnemonicParsing="false" onAction="#add" prefHeight="50.0" prefWidth="110.0" text="ajouter" />
+      <Label layoutX="21.0" layoutY="275.0" prefHeight="43.0" prefWidth="128.0" text="Email Mettre à jour" />
+      <TextField fx:id="updateEmail" layoutX="181.0" layoutY="271.0" prefHeight="50.0" prefWidth="200.0" />
+      <Label fx:id="errmsg" layoutX="135.0" layoutY="39.0" prefHeight="36.0" prefWidth="275.0" textFill="#f20d0d" />
+   </children>
+</AnchorPane>

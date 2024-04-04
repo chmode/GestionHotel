@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="696.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.loginForm">
+   <children>
+      <Pane layoutX="471.0" prefHeight="780.0" prefWidth="651.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="emailIn" alignment="CENTER" layoutX="174.0" layoutY="175.0" prefHeight="58.0" prefWidth="319.0" promptText="Enter Username" />
+            <Button fx:id="signinBtn" layoutX="236.0" layoutY="641.0" mnemonicParsing="false" onAction="#loginCheck" prefHeight="47.0" prefWidth="199.0" text="Sign in" />
+            <Label fx:id="errMsg" layoutX="172.0" layoutY="355.0" prefHeight="58.0" prefWidth="326.0" />
+            <PasswordField fx:id="pswdIn" alignment="CENTER" layoutX="173.0" layoutY="265.0" prefHeight="58.0" prefWidth="319.0" promptText="Enter Password" />
+            <RadioButton fx:id="admin" layoutX="174.0" layoutY="486.0" mnemonicParsing="false" text="admin">
+               <toggleGroup>
+                  <ToggleGroup fx:id="loginChoix" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="receptionist" layoutX="446.0" layoutY="486.0" mnemonicParsing="false" text="receptionist" toggleGroup="$loginChoix" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

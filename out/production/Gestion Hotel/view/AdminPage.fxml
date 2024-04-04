@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="611.0" prefWidth="1217.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.adminPage">
+   <children>
+      <Pane layoutX="486.0" layoutY="521.0" prefHeight="76.0" prefWidth="324.0">
+         <children>
+            <Button fx:id="logoutBtn" layoutX="54.0" layoutY="20.0" mnemonicParsing="false" onAction="#logout" prefHeight="49.0" prefWidth="199.0" text="Log out" />
+         </children>
+      </Pane>
+      <Pane layoutX="36.0" layoutY="89.0" prefHeight="186.0" prefWidth="1044.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Button fx:id="receptionistsMngBtn" alignment="CENTER" layoutX="123.0" layoutY="123.0" mnemonicParsing="false" onAction="#receptionistsMng" prefHeight="166.0" prefWidth="193.0" text="Gérer les receptionists" textAlignment="CENTER" />
+            <Button fx:id="clientsMngBtn" alignment="CENTER" layoutX="364.0" layoutY="123.0" mnemonicParsing="false" onAction="#clientsMng" prefHeight="166.0" prefWidth="193.0" text="Gérer les clients" textAlignment="CENTER" />
+            <Button alignment="CENTER" layoutX="593.0" layoutY="123.0" mnemonicParsing="false" onAction="#roomMng" prefHeight="166.0" prefWidth="193.0" text="Gérer les chambres" textAlignment="CENTER" />
+            <Button alignment="CENTER" layoutX="809.0" layoutY="123.0" mnemonicParsing="false" onAction="#reservationMng" prefHeight="166.0" prefWidth="193.0" text="Gérer les réservations" textAlignment="CENTER" />
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="337.0" layoutY="30.0" prefHeight="51.0" prefWidth="438.0" text="Welcome Admin" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="628.0" prefWidth="1214.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.receptionistsMang">
+   <children>
+      <TableView fx:id="TABLE" layoutX="649.0" layoutY="32.0" prefHeight="579.0" prefWidth="498.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="NAME" prefWidth="131.0" text="Name" />
+            <TableColumn fx:id="SALAIRE" prefWidth="103.0" text="Salaire" />
+            <TableColumn fx:id="EMAIL" prefWidth="187.0" text="Email" />
+        </columns>
+      </TableView>
+      <TextField fx:id="nameIn" layoutX="174.0" layoutY="91.0" prefHeight="50.0" prefWidth="200.0" />
+      <TextField fx:id="salaryIn" layoutX="174.0" layoutY="152.0" prefHeight="50.0" prefWidth="200.0" />
+      <TextField fx:id="emailIn" layoutX="174.0" layoutY="214.0" prefHeight="50.0" prefWidth="200.0" />
+      <Button fx:id="findBtn" layoutX="55.0" layoutY="377.0" mnemonicParsing="false" onAction="#find" prefHeight="50.0" prefWidth="145.0" text="chercher par email" />
+      <Button fx:id="updateBtn" layoutX="213.0" layoutY="377.0" mnemonicParsing="false" onAction="#update" prefHeight="50.0" prefWidth="110.0" text="update" />
+      <Button fx:id="deletBtn" layoutX="341.0" layoutY="377.0" mnemonicParsing="false" onAction="#delete" prefHeight="50.0" prefWidth="110.0" text="supprimer" />
+      <Button fx:id="rtnBtn" layoutX="33.0" layoutY="564.0" mnemonicParsing="false" onAction="#rtn" prefHeight="50.0" prefWidth="117.0" text="&lt;--" />
+      <Button fx:id="logoutBtn" layoutX="511.0" layoutY="564.0" mnemonicParsing="false" onAction="#logout" prefHeight="50.0" prefWidth="117.0" text="Log out" />
+      <Label layoutX="14.0" layoutY="91.0" prefHeight="50.0" prefWidth="82.0" text="Name" />
+      <Label layoutX="14.0" layoutY="152.0" prefHeight="43.0" prefWidth="82.0" text="Salaire" />
+      <Label layoutX="14.0" layoutY="208.0" prefHeight="43.0" prefWidth="82.0" text="Email" />
+      <Button fx:id="addBtn" layoutX="480.0" layoutY="377.0" mnemonicParsing="false" onAction="#add" prefHeight="50.0" prefWidth="110.0" text="ajouter" />
+      <Label layoutX="14.0" layoutY="280.0" prefHeight="43.0" prefWidth="128.0" text="Email Mettre à jour" />
+      <TextField fx:id="updateEmail" layoutX="174.0" layoutY="276.0" prefHeight="50.0" prefWidth="200.0" />
+      <Button layoutX="22.0" layoutY="488.0" mnemonicParsing="false" onAction="#exportToExcel" prefHeight="50.0" prefWidth="145.0" text="Export Excel" />
+      <Button layoutX="181.0" layoutY="488.0" mnemonicParsing="false" onAction="#importFromExcel" prefHeight="50.0" prefWidth="145.0" text="Import Excel" />
+      <Button layoutX="499.0" layoutY="488.0" mnemonicParsing="false" onAction="#importFromCSV" prefHeight="50.0" prefWidth="145.0" text="Import CSV" />
+      <Button layoutX="340.0" layoutY="488.0" mnemonicParsing="false" onAction="#exportToCSV" prefHeight="50.0" prefWidth="145.0" text="Export CSV" />
+      <Label fx:id="errmsg" layoutX="116.0" layoutY="32.0" prefHeight="36.0" prefWidth="275.0" textFill="#f20d0d" />
+   </children>
+</AnchorPane>

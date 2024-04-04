@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="780.0" prefWidth="1121.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Pane prefHeight="726.0" prefWidth="471.0" style="-fx-background-color: green;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="224.0" fitWidth="233.0" layoutX="85.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Hotel_logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="471.0" prefHeight="780.0" prefWidth="651.0" style="-fx-background-color: blue;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField alignment="CENTER" layoutX="174.0" layoutY="175.0" prefHeight="58.0" prefWidth="319.0" promptText="Enter Username" />
+            <Button layoutX="235.0" layoutY="460.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="199.0" text="Sign in" />
+            <Button layoutX="235.0" layoutY="535.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="199.0" text="Sign up" />
+            <Label layoutX="172.0" layoutY="355.0" prefHeight="58.0" prefWidth="326.0" text="Label" />
+            <PasswordField alignment="CENTER" layoutX="173.0" layoutY="265.0" prefHeight="58.0" prefWidth="319.0" promptText="Enter Password" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

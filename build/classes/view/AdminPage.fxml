@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="611.0" prefWidth="1217.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="486.0" layoutY="521.0" prefHeight="76.0" prefWidth="324.0" style="-fx-background-color: red;">
+         <children>
+            <Button layoutX="54.0" layoutY="20.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="199.0" text="Log out" />
+         </children>
+      </Pane>
+      <Pane layoutX="36.0" layoutY="89.0" prefHeight="186.0" prefWidth="1044.0" style="-fx-background-color: green;" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Button alignment="CENTER" layoutX="41.0" layoutY="123.0" mnemonicParsing="false" prefHeight="166.0" prefWidth="193.0" text="Gérer les employés" textAlignment="CENTER" />
+            <Button alignment="CENTER" layoutX="282.0" layoutY="123.0" mnemonicParsing="false" prefHeight="166.0" prefWidth="193.0" text="Gérer les clients" textAlignment="CENTER" />
+            <Button alignment="CENTER" layoutX="511.0" layoutY="123.0" mnemonicParsing="false" prefHeight="166.0" prefWidth="193.0" text="Gérer les chambres" textAlignment="CENTER" />
+            <Button alignment="CENTER" layoutX="727.0" layoutY="123.0" mnemonicParsing="false" prefHeight="166.0" prefWidth="193.0" text="Gérer les réservations" textAlignment="CENTER" />
+            <Button alignment="CENTER" layoutX="935.0" layoutY="123.0" mnemonicParsing="false" prefHeight="166.0" prefWidth="193.0" text="Gérer votre compte" textAlignment="CENTER" />
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="337.0" layoutY="30.0" prefHeight="51.0" prefWidth="438.0" text="Welcome Admin" />
+   </children>
+</AnchorPane>

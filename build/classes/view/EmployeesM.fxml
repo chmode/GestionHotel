@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="512.0" prefWidth="1218.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Pane layoutX="28.0" layoutY="122.0" prefHeight="189.0" prefWidth="1045.0" style="-fx-background-color: green;" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Button layoutX="41.0" layoutY="73.0" mnemonicParsing="false" prefHeight="166.0" prefWidth="193.0" text="Supprimer " />
+            <Button layoutX="254.0" layoutY="73.0" mnemonicParsing="false" prefHeight="166.0" prefWidth="193.0" text="Ajouter" />
+            <Button layoutX="478.0" layoutY="73.0" mnemonicParsing="false" prefHeight="166.0" prefWidth="193.0" text="Modifier " />
+            <Button layoutX="699.0" layoutY="73.0" mnemonicParsing="false" prefHeight="166.0" prefWidth="193.0" text="Lister" />
+         </children>
+      </Pane>
+      <Pane layoutX="51.0" layoutY="437.0" prefHeight="60.0" prefWidth="1118.0" style="-fx-background-color: red;">
+         <children>
+            <Button layoutX="890.0" layoutY="6.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="199.0" text="Log out" />
+            <Button layoutX="20.0" layoutY="6.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="199.0" text="&lt;--" />
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="302.0" layoutY="29.0" prefHeight="49.0" prefWidth="444.0" text="Gestion les employés" />
+   </children>
+</AnchorPane>
